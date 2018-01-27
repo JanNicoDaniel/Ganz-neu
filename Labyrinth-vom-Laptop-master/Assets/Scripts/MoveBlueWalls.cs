@@ -19,7 +19,7 @@ public class MoveBlueWalls : MonoBehaviour
                     }
                 }
             }
-            if (this.name == "BlueTriggerPlatform")
+            if (this.name == "BlueTrigger")
             {
                 if (this.transform.position.y == 0.1f)
                 {
@@ -27,7 +27,7 @@ public class MoveBlueWalls : MonoBehaviour
                     this.transform.position = new Vector3(transform.position.x, transform.position.y - 2, transform.position.z);
                 }
             }
-            if (this.name == "RedTriggerPlatform")
+            if (this.name == "RedTrigger")
             {
                 if (this.transform.position.y == 0.1f)
                 {
@@ -43,7 +43,7 @@ public class MoveBlueWalls : MonoBehaviour
                     this.transform.position = new Vector3(transform.position.x, transform.position.y - 2, transform.position.z);
                 }
             }
-            if (this.name == "GreenTriggerPlatform")
+            if (this.name == "GreenTrigger")
             {
                 if (this.transform.position.y == 0.1f)
                 {

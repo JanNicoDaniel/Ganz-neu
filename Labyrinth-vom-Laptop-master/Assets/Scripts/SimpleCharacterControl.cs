@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class SimpleCharacterControl : MonoBehaviour ,ITR{
 
@@ -36,6 +37,16 @@ public class SimpleCharacterControl : MonoBehaviour ,ITR{
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.tag == "Goal")
+        {
+            SceneManager.LoadScene(3);
+        }
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            SceneManager.LoadScene(2);
+        }
+
         ContactPoint[] contactPoints = collision.contacts;
         for(int i = 0; i < contactPoints.Length; i++)
         {
@@ -47,6 +58,8 @@ public class SimpleCharacterControl : MonoBehaviour ,ITR{
                 m_isGrounded = true;
             }
         }
+        
+            
     }
 
     private void OnCollisionStay(Collision collision)

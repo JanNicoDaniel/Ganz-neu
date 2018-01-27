@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonBehaviour : MonoBehaviour {
-
-    public void LoadLevelByIndex(int levelIndex)
+    
+	void Update ()
     {
-        Application.LoadLevel(1);
-    }
-
-	void Update () {
         if (Input.anyKeyDown)
-            Application.LoadLevel(1);
-	}
+        {
+            SceneManager.LoadScene(1);
+        }
+    }
 }

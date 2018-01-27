@@ -23,6 +23,7 @@ public class Enemy : MonoBehaviour {
     {
         player = GameObject.FindWithTag("Player");
         Taschenlampe = GameObject.FindWithTag("Taschenlampe");
+
     }
     void OnCollisionStay(Collision collision)
     {
@@ -115,4 +116,5 @@ public class Enemy : MonoBehaviour {
         GetComponent<Rigidbody>().velocity = (player.transform.position - transform.position).normalized * speed;
         //transform.Translate(player.transform.position * Time.deltaTime);
     }
+    
 }

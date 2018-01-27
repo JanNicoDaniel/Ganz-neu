@@ -77,7 +77,7 @@ public class MoveDown : MonoBehaviour
             Debug.Log("Pinke Wände geöffnet!");
             purpleWall1.transform.position = new Vector3(purpleWall1.transform.position.x, purpleWall1.transform.position.y - 1, purpleWall1.transform.position.z);
             purpleWall2.transform.position = new Vector3(purpleWall2.transform.position.x, purpleWall2.transform.position.y - 1, purpleWall2.transform.position.z);
-            if (purpleWall1.transform.position.y < -23)
+            if (purpleWall1.transform.position.y < -48)
             {
                 purpleDown = false;
             }
@@ -86,7 +86,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Weiße Wand geöffnet!");
             whiteWall.transform.position = new Vector3(whiteWall.transform.position.x, whiteWall.transform.position.y - 1, whiteWall.transform.position.z);
-            if (whiteWall.transform.position.y < -23)
+            if (whiteWall.transform.position.y < -48)
             {
                 whiteDown = false;
             }
@@ -95,7 +95,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Blaue Wand geöffnet!");
             blueWall.transform.position = new Vector3(blueWall.transform.position.x, blueWall.transform.position.y - 1, blueWall.transform.position.z);
-            if (blueWall.transform.position.y < -23)
+            if (blueWall.transform.position.y < -48)
             {
                 blueDown = false;
             }
@@ -104,7 +104,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Grüne Wand geöffnet!");
             greenWall.transform.position = new Vector3(greenWall.transform.position.x, greenWall.transform.position.y - 1, greenWall.transform.position.z);
-            if (greenWall.transform.position.y < -23)
+            if (greenWall.transform.position.y < -48)
             {
                 greenDown = false;
             }
@@ -113,7 +113,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Rote Wand geöffnet!");
             redWall.transform.position = new Vector3(redWall.transform.position.x, redWall.transform.position.y - 1, redWall.transform.position.z);
-            if (redWall.transform.position.y < -23)
+            if (redWall.transform.position.y < -48)
             {
                 redDown = false;
             }
@@ -122,7 +122,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Gelbe Wand geöffnet!");
             yellowWall.transform.position = new Vector3(yellowWall.transform.position.x, yellowWall.transform.position.y - 1, yellowWall.transform.position.z);
-            if (yellowWall.transform.position.y < -23)
+            if (yellowWall.transform.position.y < -48)
             {
                 yellowDown = false;
             }
@@ -132,7 +132,7 @@ public class MoveDown : MonoBehaviour
             Debug.Log("Orangene Wände geöffnet!");
             orangeWall1.transform.position = new Vector3(orangeWall1.transform.position.x, orangeWall1.transform.position.y - 1, orangeWall1.transform.position.z);
             orangeWall2.transform.position = new Vector3(orangeWall2.transform.position.x, orangeWall2.transform.position.y - 1, orangeWall2.transform.position.z);
-            if (orangeWall1.transform.position.y < -23)
+            if (orangeWall1.transform.position.y < -48)
             {
                 orangeDown = false;
             }
@@ -141,7 +141,7 @@ public class MoveDown : MonoBehaviour
         {
             Debug.Log("Türkise Wand geöffnet!");
             tealWall.transform.position = new Vector3(tealWall.transform.position.x, tealWall.transform.position.y - 1, tealWall.transform.position.z);
-            if (tealWall.transform.position.y < -23)
+            if (tealWall.transform.position.y < -48)
             {
                 tealDown = false;
             }
